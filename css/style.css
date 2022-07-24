@@ -1,0 +1,214 @@
+
+
+/*  color */
+
+.f-color-red {
+    color: red;
+}
+.f-color-green {
+    color: green;
+}
+.f-color-blue {
+    color: blue;
+}
+.f-color-orange {
+    color: orange;
+}
+.link-color a:link {
+    color: red;
+}
+.link-color a:visited {
+    color: green;
+}
+.link-color a:hover {
+    color: blue;
+}
+.link-color a:active {
+    color: orange;
+}
+
+/*  decoration   */
+
+.decoration-none {
+    text-decoration: none;
+}
+
+.decoration-hover:hover {
+    text-decoration: none;
+    text-decoration-style: dashed;
+    border-bottom: 1px dashed orange;
+}
+
+/*  tag  */
+
+header, section, footer {
+    border: 1px solid darkgray;
+    font-family: sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+img {
+    width: 100px;
+    height: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 9px 0px;
+    border-bottom: 1px dashed darkgray;
+}
+
+
+
+/*  class   */
+/*  Завдання 1 */
+
+.task-1__wrapper, .task-2__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.link-img a {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.link-3 button:hover {
+    cursor: pointer;
+}
+
+
+li.link-12 {
+    display: flex;
+    align-items: center;
+}
+
+li.link-12 img {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+
+
+/*  Завдання 2 */
+
+/*  form    */
+
+
+
+/*  form 1  */
+
+.form-1 form {
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+.form-1 div {
+    margin: 3px;
+}
+
+.form-1 .country{
+    display: flex;
+}
+
+.form-1 .country > div{
+    margin: 0;
+}
+
+
+
+/*
+
+select {
+    font: inherit;
+    letter-spacing: inherit;
+    word-spacing: inherit;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+select:not([multiple]) {
+    padding-right: 1.2em;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 0.25em) 0.35em;
+    background-size: 0.85em auto;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'%3E%3Cpath d='M70.3 13.8L40 66.3 9.7 13.8z' fill='%23000'%3E%3C/path%3E%3C/svg%3E");
+}
+
+!* скроет иконку стрелки в IE *!
+select::-ms-expand {
+    display: none;
+}*/
+
+
+select {
+    width: 140px;
+    padding: 2px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+label {
+    position: relative;
+}
+
+.gender label:after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 23px;
+    width: 23px;
+    content: '<>';
+    font: 14px "Consolas", monospace;
+    color: #eee;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 0px;
+    top: -3px;
+    border-bottom: 1px solid #ddd;
+    position: absolute;
+    background-color: cornflowerblue;
+    background: #EB60F7;
+    background: -webkit-linear-gradient(left, #EB60F7, #9B3EA3);
+    background: -moz-linear-gradient(left, #EB60F7, #9B3EA3);
+    background: linear-gradient(to right, #EB60F7, #9B3EA3);
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.date label {
+    border: 1px solid red;
+}
+
+.date label:after{
+content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #EB60F7;
+}
+
+.date label:before{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #0d9139;
+}
