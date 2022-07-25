@@ -219,7 +219,7 @@ div.l:after, div.l:before  {
     font-size: 9px;
     color: #A9A9A9;
     z-index: 1000;
-    right: 0px;
+    right: 1px;
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
