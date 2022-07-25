@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    
     <title>ЗАВДАННЯ 4</title>
+
     <link rel="stylesheet" href="css/style.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
 
@@ -76,51 +78,35 @@
                         Password
                         <input type="password" placeholder="Enter Password">
                     </div>
-                    <div class="date">
+
+                    <div class="date-1">
+                        <div class="l">
+
+                        </div>
                         Born in
-                        <input type="date">
+                        <input type="date" class="l-date">
                     </div>
+
+
                     <div class="country">
                         <div>
-                            en
+                            <span>en</span>
                             <input type="radio" value="en" name="country">
                         </div>
                         <div>
-                            ua
+                            <span>ua</span>
                             <input type="radio" value="ua" name="country">
                         </div>
                     </div>
                     <div class="gender">
                         <label for="select-gender">
-                        <select id="select-gender" name="select-gender">
-                            <option value="">select gender</option>
-                            <option value="male">male</option>
-                            <option value="female">female</option>
-                        </select>
-                        </label>
-                    </div>
-
-
-
-
-                    <div class="date">
-                        Born in
-                        <label for="date-i"></label>
-                        <input type="date" id="date-i">
-                    </div>
-
-
-
-<!--
-                    <div>
-                        <label class=".label-custom-select" for="custom-select"></label>
-                            <select class="custom-select" id="custom-select" name="select-gender-2">
-                                <option value="">select gender 2</option>
+                            <select id="select-gender" name="select-gender">
+                                <option value="">select gender</option>
                                 <option value="male">male</option>
                                 <option value="female">female</option>
                             </select>
+                        </label>
                     </div>
--->
 
 
                     <div>
@@ -135,12 +121,149 @@
 
 
             <div class="form-2">
-                <form action=""></form>
+                <div class="task__header">
+                    <h3>form 2</h3>
+                </div>
+                <form action="">
+
+                    <div>
+                        <div class="f-descr">Логiн:</div>
+                        <div class="f-cont"><input type="text" name="login-2"></div>
+                    </div>
+
+                    <div>
+                        <div class="f-descr">Пароль:</div>
+                        <div class="f-cont"><input type="password" name="pass-2"></div>
+                    </div>
+
+                    <div>
+                        <div class="f-descr">Повторiть пароль:</div>
+                        <div class="f-cont"><input type="password" name="pass-2-conf"></div>
+                    </div>
+
+                    <div>
+                        <div class="f-descr">Стать:</div>
+                        <div class="f-cont">
+                            <div>
+                                <input type="radio" name="gender" value="male">
+                                <span>чоловiк</span>
+                            </div>
+                            <div>
+                                <input type="radio" name="gender" value="female">
+                                <span>жiнка</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="f-descr">Вкажiть мiсто:</div>
+                        <div class="f-cont">
+                            <select name="city" id="city" size="4">
+                                <option value="1">Житомир</option>
+                                <option value="2">Киiв</option>
+                                <option value="3">Львiв</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="f-descr">Iнтереси:</div>
+                        <div class="f-cont">
+
+                            <div>
+                                <input type="checkbox" value="1" name="hobby">
+                                <span>футбол</span>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" value="2" name="hobby">
+                                <span>шахи</span>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" value="3" name="hobby">
+                                <span>малювання</span>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" value="4" name="hobby">
+                                <span>музика</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="f-descr"></div>
+                        <div class="f-cont btn">
+                            <input type="reset" value="Очистии">
+                            <input type="submit" value="Вiдправити">
+                        </div>
+                    </div>
+
+
+                </form>
             </div>
 
 
             <div class="form-3">
-                <form action=""></form>
+                <div class="task__header">
+                    <h3>form 3</h3>
+                </div>
+                <form action="">
+
+                    <div class="content">
+                        <div class="header">
+                            <span>Вход</span>
+                            <img class="close" src="img/cancel.png" alt="">
+                        </div>
+
+                        <div class="descr">
+                            <div class="login-form">
+                                <div class="login">
+                                    <span>Эл. почта или телефон</span>
+                                    <input type="text" name="login">
+                                </div>
+                                <div class="pass">
+                                    <span>Пароль</span>
+                                    <input type="password">
+                                </div>
+                                <div class="rem">
+                                    <div>
+                                        <input type="checkbox" checked>
+                                        <span>Запомнить меня</span>
+                                    </div>
+                                    <div>
+                                        <a href="#">Напомнить пароль</a>
+                                    </div>
+                                </div>
+                                <div class="btn">
+                                    <input type="submit" value="Войти">
+                                    <a href="#">Зарегестрироваться</a>
+                                </div>
+
+                            </div>
+                            <div class="or">
+                                <div class="line"></div>
+                                <div class="line-txt">или</div>
+                                <div class="line"></div>
+                            </div>
+                            <div class="login-soc">
+                                <span>Войти как пользователь</span>
+                                <a href="#">
+                                    <img src="img/facebook.png" alt="">
+                                    <span>Facebook</span>
+                                </a>
+                                 <a href="#">
+                                    <img src="img/google.png" alt="">
+                                    <span>Google</span>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </form>
             </div>
 
 
