@@ -75,6 +75,19 @@ li {
     align-items: center;
 }
 
+.task__header {
+    text-align: center;
+}
+
+.task__descr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-1 {
+    max-width: 290px;
+}
+
 
 .link-img a {
     width: 100%;
@@ -121,35 +134,11 @@ li.link-12 img {
     display: flex;
 }
 
-.form-1 .country > div{
-    margin: 0;
+.form-1 .country > div {
+    margin: 0px 10px 0px 0px;
 }
 
 
-
-/*
-
-select {
-    font: inherit;
-    letter-spacing: inherit;
-    word-spacing: inherit;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-}
-
-select:not([multiple]) {
-    padding-right: 1.2em;
-    background-repeat: no-repeat;
-    background-position: calc(100% - 0.25em) 0.35em;
-    background-size: 0.85em auto;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'%3E%3Cpath d='M70.3 13.8L40 66.3 9.7 13.8z' fill='%23000'%3E%3C/path%3E%3C/svg%3E");
-}
-
-!* скроет иконку стрелки в IE *!
-select::-ms-expand {
-    display: none;
-}*/
 
 
 select {
@@ -177,7 +166,7 @@ label {
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
     right: 0px;
-    top: -2px;
+    top: -3px;
     border-bottom: 1px solid #ddd;
     position: absolute;
     background-color: cornflowerblue;
@@ -189,26 +178,207 @@ label {
     border-top-left-radius: 4px;
 }
 
-.date label {
-    border: 1px solid red;
+
+
+input.custom-select[type="date"]::-webkit-inner-spin-button,
+input.custom-select[type="date"]::-webkit-calendar-picker-indicator {
+
+
+
+    background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
+    width: 25px;
 }
 
-.date label:after{
-content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 10px;
-    height: 10px;
-    background-color: #EB60F7;
+
+.date-1 {
+    position: relative;
+    display: flex;
+    max-width: fit-content;
+    justify-content: center;
+    align-items: center;
 }
 
-.date label:before{
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 10px;
-    height: 10px;
-    background-color: #0d9139;
+.date-1 input{
+    margin-left: 5px;
 }
+
+div.l {
+    position: absolute;
+    width: 6px;
+    height: 14px;
+    border: 1px solid darkgray;
+    border-radius: 4px;
+    right: 20px;
+    z-index: 1000;
+    top: 2px;
+    margin: 0px;
+}
+
+div.l:after, div.l:before  {
+    position: absolute;
+    font-size: 9px;
+    color: #A9A9A9;
+    z-index: 1000;
+    right: 0px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+div.l:after {
+    content: ">";
+    top: 6px;
+}
+
+div.l:before {
+    content: "<";
+}
+
+
+
+
+
+.country span, .country input {
+display: inline-block;
+}
+
+.country input {
+vertical-align: middle;
+margin: 0;
+top: -1px;
+position: relative;
+}
+
+.country div {
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+
+
+
+
+/*  form-2  */
+
+
+.form-2{
+    margin: 50px auto;
+}
+
+.form-2 form>div {
+    margin: 10px 0px;
+}
+
+.form-2 form>div, .form-2 .f-cont {
+    display: flex;
+    align-items: center;
+}
+
+.form-2 .f-descr{
+    min-width: 150px;
+}
+
+.form-2 .f-cont>div {
+    margin-right: 10px;
+}
+
+.form-2  input {
+    top: 1px;
+    position: relative;
+}
+
+.form-2 .f-cont.btn input{
+    margin-right: 10px;
+}
+
+
+
+/*  form 3  */
+
+.form-3 form {
+    border: 1px solid darkgray;
+    border-radius: 3px;
+    min-width: 550px;
+}
+
+img.close{
+    width: 15px;
+    height: 15px;
+}
+
+.form-3 .header span {
+    font-size: 25px;
+}
+
+.form-3 .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.form-3 .descr{
+    display: flex;
+}
+
+
+.login-soc {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.login-form {
+    flex-grow: 1;
+    padding: 0px 0px 20px 15px;
+}
+
+
+.login-form > div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+.or {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 10px;
+}
+
+
+.line {
+    flex-grow: 1;
+    width: 1px;
+    background-color: #ddd;
+}
+
+
+
+
+
+
+
+.login-soc {
+    display: flex;
+    flex-direction: column;
+    padding-right: 15px;
+}
+
+
+.login-soc img{
+    width: 20px;
+    height: auto;
+}
+
+
