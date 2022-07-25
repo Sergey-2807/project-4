@@ -300,12 +300,22 @@ position: relative;
 .form-3 form {
     border: 1px solid darkgray;
     border-radius: 3px;
-    min-width: 550px;
+    min-width: 635px;
 }
 
 img.close{
     width: 15px;
     height: 15px;
+    transition: transform .3s ease-in-out;
+}
+
+img.close:hover {
+cursor: pointer;
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+
 }
 
 .form-3 .header span {
@@ -317,13 +327,129 @@ img.close{
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #ddd;
-    padding: 10px;
+    padding: 10px 20px;
     margin-bottom: 20px;
 }
 
-.form-3 .descr{
+.form-3 .descr {
     display: flex;
+    padding-bottom: 20px;
 }
+
+.form-3 input{
+    margin-top: 5px;
+}
+.form-3 input[type="text"], .form-3 input[type="password"] {
+    height: 34px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    /* line-height: 25px; */
+    font-size: 1.7em;
+    padding: 0px 5px;
+}
+
+.form-3 input[type="checkbox"] {
+display: none;
+}
+
+
+.form-3 label {
+
+    cursor: default;
+    vertical-align: middle;
+    border-radius: 3px;
+}
+
+
+.form-3 label:hover {
+
+    cursor: pointer;
+
+}
+
+
+
+.form-3 input:checked + label:before {
+    content: "";
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23ffffff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+background-color: forestgreen;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 3px;
+}
+
+
+.form-3 input:disabled + label:before {
+    background: #eee;
+    color: #aaa;
+}
+
+
+
+.form-3 label:before {
+    content: "";
+    color: #000;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #e3e3e3;
+    vertical-align: middle;
+    border-radius: 3px;
+}
+
+
+
+.rem {
+    font-size: 0.9em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rem span {
+    color: #5e5959;
+}
+
+
+.rem a, .form-3 .btn a {
+    text-decoration: none;
+    color: #0e6ad5;
+}
+
+.rem a:hover {
+    color: #5180d5;
+}
+
+
+.form-3 .btn input {
+    height: 45px;
+    background-color: #00A046;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2em;
+}
+
+.form-3 .btn input:hover {
+cursor: pointer;
+    background-color: #46a062;
+
+}
+
+
+.form-3 .btn a {
+    margin-top: 15px;
+    text-align: center;
+}
+
+
+
+
+
+
+
 
 
 .login-soc {
@@ -334,16 +460,32 @@ img.close{
 
 .login-form {
     flex-grow: 1;
-    padding: 0px 0px 20px 15px;
+    padding: 0px 0px 0px 20px;
 }
 
 
 .login-form > div {
-    display: flex;
-    flex-direction: column;
     margin-bottom: 15px;
 }
 
+.login-form .login,
+.login-form .pass,
+.login-form .btn
+{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.login-form .login, .login-form .pass {
+    font-size: 11px;
+    color: gray;
+}
+
+
+.login-form .rem {
+    display: flex;
+}
 
 
 
@@ -353,7 +495,7 @@ img.close{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0px 10px;
+    margin: 0px 20px;
 }
 
 
@@ -364,7 +506,10 @@ img.close{
 }
 
 
-
+.line-txt, .login-soc > span  {
+    font-size: 0.9em;
+    color: #969494;
+}
 
 
 
@@ -372,13 +517,93 @@ img.close{
 .login-soc {
     display: flex;
     flex-direction: column;
-    padding-right: 15px;
+    padding-right: 20px;
+    min-width: 210px;
+}
+
+.login-soc > * {
+    margin-bottom: 20px;
 }
 
 
-.login-soc img{
+.login-soc > span {
+    text-align: center;
+}
+
+
+.login-soc a {
+    display: inline-block;
+    height: 45px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 45px;
+    color: #5180d5;
+    font-weight: bold;
+    background-color: #F5F5F5;
+}
+
+
+.login-soc img {
     width: 20px;
     height: auto;
+    top: 3px;
+    position: relative;
+    margin-right: 5px;
 }
 
 
+
+
+
+/*  form 4  */
+
+
+.form-4 {
+    margin-top: 35px;
+}
+
+
+.form-4 .pass img {
+    height: 20px;
+    width: auto;
+    margin: 0px 10px;
+    position: relative;
+    top: 2px;
+}
+
+.form-4 .pass img:hover {
+cursor: pointer;
+}
+
+.form-4 .pass div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-4 .pass input {
+    flex-grow: 1;
+}
+
+
+.form-4 .rem {
+    max-width: 300px;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.form-4 .rem p {
+    font-size: 11px;
+    color: gray;
+    margin: 5px 0px 10px;
+}
+.form-4 .pass {
+    margin-bottom: 0;
+}
+
+.form-4 .btn a {
+    font-size: 0.95em;
+}
