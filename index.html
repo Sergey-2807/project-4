@@ -61,7 +61,7 @@
         <div class="task__descr">
 
             <div class="form-1">
-                <form action="">
+                <form action="#">
                     <div>
                         First Name
                         <input type="text" placeholder="Enter First Name">
@@ -124,7 +124,7 @@
                 <div class="task__header">
                     <h3>form 2</h3>
                 </div>
-                <form action="">
+                <form action="#">
 
                     <div>
                         <div class="f-descr">Логiн:</div>
@@ -210,7 +210,7 @@
                 <div class="task__header">
                     <h3>form 3</h3>
                 </div>
-                <form action="">
+                <form action="#">
 
                     <div class="content">
                         <div class="header">
@@ -222,15 +222,16 @@
                             <div class="login-form">
                                 <div class="login">
                                     <span>Эл. почта или телефон</span>
-                                    <input type="text" name="login">
+                                    <input type="text" name="login" maxlength="32">
                                 </div>
                                 <div class="pass">
                                     <span>Пароль</span>
-                                    <input type="password">
+                                    <input type="password" maxlength="16">
                                 </div>
                                 <div class="rem">
-                                    <div>
-                                        <input type="checkbox" checked>
+                                    <div style="position: relative">
+                                        <input type="checkbox" id="checkbox-form-3" checked>
+                                        <label for="checkbox-form-3"></label>
                                         <span>Запомнить меня</span>
                                     </div>
                                     <div>
@@ -250,11 +251,11 @@
                             </div>
                             <div class="login-soc">
                                 <span>Войти как пользователь</span>
-                                <a href="#">
+                                <a class="fb" href="#">
                                     <img src="img/facebook.png" alt="">
                                     <span>Facebook</span>
                                 </a>
-                                 <a href="#">
+                                <a class="gl" href="#">
                                     <img src="img/google.png" alt="">
                                     <span>Google</span>
                                 </a>
@@ -267,8 +268,71 @@
             </div>
 
 
-            <div class="form-4">
-                <form action=""></form>
+            <div class="form-3 form-4">
+                <div class="task__header">
+                    <h3>form 4</h3>
+                </div>
+                <form action="#">
+
+                    <div class="content">
+                        <div class="header">
+                            <span>Вход</span>
+                            <img class="close" src="img/cancel.png" alt="">
+                        </div>
+
+                        <div class="descr">
+                            <div class="login-form">
+                                <div class="login">
+                                    <span>Фамилия</span>
+                                    <input type="text" name="surname" maxlength="32">
+                                </div>
+                                <div class="login">
+                                    <span>Имя</span>
+                                    <input type="text" name="name" maxlength="32">
+                                </div>
+                                <div class="login">
+                                    <span>Эл. почта или телефон</span>
+                                    <input type="text" name="login" maxlength="32">
+                                </div>
+                                <div class="pass">
+                                    <span>Придумайте пароль</span>
+                                    <div>
+                                        <input type="password" maxlength="16">
+                                        <img src="img/eye_1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="rem">
+                                    <p>Пароль должен быть не менее 6 символов, содержать цифры и латинские буквы, в том
+                                        числе заглавные, и не должен совпадать с именем и эл. почтой</p>
+                                    <p>Зегистрируясь, Вы соглашаетесь с <a href="#">пользовательским соглашением</a></p>
+                                </div>
+                                <div class="btn">
+                                    <input type="submit" value="Зарегистрироваться">
+                                    <a href="#">Я уже зарегистрирован</a>
+                                </div>
+
+                            </div>
+                            <div class="or">
+                                <div class="line"></div>
+                                <div class="line-txt">или</div>
+                                <div class="line"></div>
+                            </div>
+                            <div class="login-soc">
+                                <span>Войти как пользователь</span>
+                                <a class="fb" href="#">
+                                    <img src="img/facebook.png" alt="">
+                                    <span>Facebook</span>
+                                </a>
+                                <a class="gl" href="#">
+                                    <img src="img/google.png" alt="">
+                                    <span>Google</span>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </form>
             </div>
 
 
@@ -277,6 +341,7 @@
 </section>
 <footer>
 
+    
 </footer>
 </body>
 </html>
